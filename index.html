@@ -5,135 +5,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishanth Bhat - Developer Profile</title>
+
+```
+<title>Nishanth Bhat - Developer Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
 
-<div>
-    <h1>J Nishanth Bhat</h1>
-    <img src="profile.jpeg" alt="Nishanth Bhat" width="150">
-    <p>AI & ML Engineering Student | MERN Stack Developer</p>
+```
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Nishanth.</h2>
 
-    <a href="#about">About Me</a> |
-    <a href="#skills">Skills</a> |
-    <a href="#projects">Projects</a> |
-    <a href="#contact">Contact</a>
-</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
 
-<hr>
 
-<div id="about">
-    <h2>About Me</h2>
+<!-- Hero Section -->
+<section class="hero">
 
-    <p>
-        Hi! I'm Nishanth Bhat, a second-year Artificial Intelligence
-        and Machine Learning engineering student.
-    </p>
+    <div class="hero-text">
+        <p class="small-title">HELLO, I'M</p>
 
-    <p>
-        I have a good foundation in web development and I'm currently
-        learning the MERN stack. I enjoy building projects and exploring
-        new technologies.
-    </p>
+        <h1>J Nishanth Bhat</h1>
 
-    <p>
-        I'm interested in both full-stack development and
-        Artificial Intelligence & Machine Learning.
-    </p>
-</div>
+        <h2>AI & ML Engineering Student</h2>
 
-<hr>
+        <p>
+            I'm a second-year Artificial Intelligence and Machine
+            Learning engineering student passionate about web
+            development, AI and building real-world projects.
+        </p>
 
-<div id="skills">
-    <h2>Skills</h2>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+    </div>
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>C / C++</li>
-        <li>Git & GitHub</li>
-        <li>MERN Stack</li>
-    </ul>
-</div>
+    <div class="hero-image">
+        <img src="profile.jpeg" alt="Nishanth Bhat">
+    </div>
 
-<hr>
+</section>
 
-<div id="projects">
-    <h2>Projects</h2>
 
-    <h3>Spotify Clone</h3>
-    <p>
-        A web development project inspired by Spotify,
-        created to practice frontend development.
-    </p>
+<!-- About Section -->
+<section id="about" class="section">
 
-    <h3>SAMAGRA NLAMS</h3>
-    <p>
-        A prototype for a National Land Acquisition and
-        Management System with GIS and workflow features.
-    </p>
+    <div class="section-heading">
+        <p>GET TO KNOW ME</p>
+        <h2>About Me</h2>
+    </div>
 
-    <h3>TASC Website</h3>
-    <p>
-        Official website of TASC (Dept of Artificial Intelligence and Machine Learning)
-    </p>
-</div>
+    <div class="about-card">
 
-<hr>
+        <p>
+            Hi! I'm Nishanth Bhat, a second-year Artificial Intelligence
+            and Machine Learning engineering student.
+        </p>
 
-<div id="contact">
-    <h2>Contact Me</h2>
+        <p>
+            I have a good foundation in web development and I'm currently
+            learning the MERN stack. I enjoy building projects and
+            exploring new technologies.
+        </p>
 
-    <p>
-        Email:
-        <a href="mailto:bhatnishanth07@gmail.com">
-            bhatnishanth07@gmail.com
-        </a>
-    </p>
+        <p>
+            I'm interested in both full-stack development and
+            Artificial Intelligence & Machine Learning.
+        </p>
 
-    <p>
-        GitHub:
-        <a href="https://github.com/NISHANTH-100807" target="_blank">
-            github.com/NISHANTH-100807
-        </a>
-    </p>
+    </div>
 
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/j-nishanth-bhat/" target="_blank">
-            linkedin.com/in/j-nishanth-bhat
-        </a>
-    </p>
+</section>
 
-    <h3>Send Me a Message</h3>
 
-    <form>
+<!-- Skills Section -->
+<section id="skills" class="section">
 
-        <label>Name:</label>
-        <br>
-        <input type="text" name="name">
+    <div class="section-heading">
+        <p>WHAT I WORK WITH</p>
+        <h2>My Skills</h2>
+    </div>
 
-        <br><br>
+    <div class="skills-grid">
 
-        <label>Email:</label>
-        <br>
-        <input type="email" name="email">
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Building structured and accessible web pages.</p>
+        </div>
 
-        <br><br>
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Creating responsive and visually appealing designs.</p>
+        </div>
 
-        <label>Message:</label>
-        <br>
-        <textarea name="message" rows="5" cols="30"></textarea>
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Adding logic and interactivity to websites.</p>
+        </div>
 
-        <br><br>
+        <div class="skill-card">
+            <h3>Python</h3>
+            <p>Programming and exploring AI/ML concepts.</p>
+        </div>
 
-        <input type="submit" value="Send Message">
+        <div class="skill-card">
+            <h3>C / C++</h3>
+            <p>Strong programming and problem-solving fundamentals.</p>
+        </div>
 
-    </form>
-</div>
+        <div class="skill-card">
+            <h3>Git & GitHub</h3>
+            <p>Managing and collaborating on software projects.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>MERN Stack</h3>
+            <p>Currently learning modern full-stack development.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+
+    <div class="section-heading">
+        <p>MY WORK</p>
+        <h2>Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <span class="project-number">01</span>
+            <h3>Spotify Clone</h3>
+
+            <p>
+                A web development project inspired by Spotify,
+                created to practice frontend development.
+            </p>
+
+            <a href="#">View Project →</a>
+        </div>
+
+
+        <div class="project-card">
+            <span class="project-number">02</span>
+            <h3>SAMAGRA NLAMS</h3>
+
+            <p>
+                A prototype for a National Land Acquisition and
+                Management System with GIS and workflow features.
+            </p>
+
+            <a href="#">View Project →</a>
+        </div>
+
+
+        <div class="project-card">
+            <span class="project-number">03</span>
+            <h3>TASC Website</h3>
+
+            <p>
+                Official website project for TASC, the Department
+                of Artificial Intelligence and Machine Learning.
+            </p>
+
+            <a href="#">View Project →</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+
+    <div class="section-heading">
+        <p>GET IN TOUCH</p>
+        <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Let's Connect</h3>
+
+            <p>
+                Feel free to reach out to me through email or
+                social media.
+            </p>
+
+            <p>
+                <strong>Email:</strong><br>
+                <a href="mailto:bhatnishanth07@gmail.com">
+                    bhatnishanth07@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>GitHub:</strong><br>
+                <a href="https://github.com/NISHANTH-100807" target="_blank">
+                    github.com/NISHANTH-100807
+                </a>
+            </p>
+
+            <p>
+                <strong>LinkedIn:</strong><br>
+                <a href="https://www.linkedin.com/in/j-nishanth-bhat/" target="_blank">
+                    linkedin.com/in/j-nishanth-bhat
+                </a>
+            </p>
+
+        </div>
+
+
+        <form class="contact-form">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"
+                placeholder="Write your message here..."></textarea>
+
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
 
 </body>
 
