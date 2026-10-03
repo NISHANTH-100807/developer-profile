@@ -1,4 +1,3 @@
-javascript
 let secretNumber;
 let attempts = 0;
 const maxAttempts = 10;
@@ -79,20 +78,22 @@ function checkGuess() {
     }
 
     if (userGuess < secretNumber) {
-        message.textContent = "Too low! Try a higher number.";
+        message.textContent = "📉 Too low! Try a higher number.";
         message.className = "game-message warning";
     } else {
-        message.textContent = "Too high! Try a lower number.";
+        message.textContent = "📈 Too high! Try a lower number.";
         message.className = "game-message warning";
     }
 
     if (attempts >= maxAttempts) {
         message.textContent =
-            ` Game over! The correct number was ${secretNumber}.`;
+            `Game over! The correct number was ${secretNumber}.`;
 
         message.className = "game-message error";
 
         endGame();
+
+        return;
     }
 
     guessInput.value = "";
@@ -135,14 +136,14 @@ difficultyButtons.forEach(function (button) {
     });
 });
 
-contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    alert(
-        "Thank you for your message! This demo form is ready for backend integration."
-    );
+        alert("Thank you for your message!");
 
-    contactForm.reset();
-});
+        contactForm.reset();
+    });
+}
 
 startGame();

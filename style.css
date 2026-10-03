@@ -1,7 +1,3 @@
-/* =========================================
-   GLOBAL STYLES
-========================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -19,27 +15,18 @@ body {
     line-height: 1.6;
 }
 
-
-/* =========================================
-   NAVIGATION
-========================================= */
-
 header {
     background-color: #0f172a;
     border-bottom: 1px solid #334155;
-
     position: sticky;
     top: 0;
-
     z-index: 1000;
 }
 
 .navbar {
     max-width: 1100px;
     margin: auto;
-
     padding: 18px 25px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,9 +46,7 @@ header {
 .nav-links a {
     color: #e2e8f0;
     text-decoration: none;
-
     font-weight: bold;
-
     transition: color 0.3s ease;
 }
 
@@ -69,22 +54,14 @@ header {
     color: #38bdf8;
 }
 
-
-/* =========================================
-   HERO SECTION
-========================================= */
-
 .hero {
     max-width: 1100px;
     min-height: 90vh;
-
     margin: auto;
     padding: 80px 25px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     gap: 50px;
 }
 
@@ -94,33 +71,26 @@ header {
 
 .small-title {
     color: #38bdf8;
-
     font-weight: bold;
     letter-spacing: 3px;
-
     margin-bottom: 10px;
 }
 
 .hero h1 {
     font-size: 60px;
     line-height: 1.1;
-
     margin-bottom: 15px;
 }
 
 .hero h2 {
     color: #94a3b8;
-
     font-size: 25px;
-
     margin-bottom: 20px;
 }
 
 .hero-text > p:not(.small-title) {
     max-width: 600px;
-
     color: #cbd5e1;
-
     font-size: 18px;
 }
 
@@ -131,15 +101,10 @@ header {
 .hero-image img {
     width: 280px;
     height: 280px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     border: 5px solid #38bdf8;
-
     box-shadow: 0 0 35px rgba(56, 189, 248, 0.3);
-
     transition: transform 0.4s ease;
 }
 
@@ -147,113 +112,73 @@ header {
     transform: scale(1.05);
 }
 
-
-/* =========================================
-   BUTTONS
-========================================= */
-
 .hero-buttons {
     margin-top: 30px;
-
     display: flex;
     gap: 15px;
 }
 
 .btn {
     display: inline-block;
-
     padding: 12px 25px;
-
     background-color: #38bdf8;
-
     color: #0f172a;
-
     text-decoration: none;
-
     font-weight: bold;
-
     border-radius: 6px;
-
     transition: all 0.3s ease;
 }
 
 .btn:hover {
     background-color: #7dd3fc;
-
     transform: translateY(-3px);
 }
 
 .btn-outline {
     background-color: transparent;
-
     color: #38bdf8;
-
     border: 2px solid #38bdf8;
 }
 
 .btn-outline:hover {
     background-color: #38bdf8;
-
     color: #0f172a;
 }
 
-
-/* =========================================
-   GENERAL SECTIONS
-========================================= */
-
 .section {
     max-width: 1100px;
-
     margin: auto;
-
     padding: 90px 25px;
 }
 
 .section-heading {
     text-align: center;
-
     margin-bottom: 45px;
 }
 
 .section-heading p {
     color: #38bdf8;
-
     font-size: 14px;
-
     font-weight: bold;
-
     letter-spacing: 3px;
 }
 
 .section-heading h2 {
     font-size: 40px;
-
     margin-top: 5px;
 }
 
-
-/* =========================================
-   ABOUT
-========================================= */
-
 .about-card {
     background-color: #1e293b;
-
     padding: 35px;
-
     border-radius: 12px;
-
     border: 1px solid #334155;
-
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .about-card p {
     margin-bottom: 18px;
-
     color: #cbd5e1;
-
     font-size: 17px;
 }
 
@@ -261,34 +186,22 @@ header {
     margin-bottom: 0;
 }
 
-
-/* =========================================
-   SKILLS
-========================================= */
-
 .skills-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 20px;
 }
 
 .skill-card {
     background-color: #1e293b;
-
     padding: 25px;
-
     border-radius: 10px;
-
     border: 1px solid #334155;
-
     transition: all 0.3s ease;
 }
 
 .skill-card h3 {
     color: #38bdf8;
-
     margin-bottom: 10px;
 }
 
@@ -298,70 +211,49 @@ header {
 
 .skill-card:hover {
     transform: translateY(-8px);
-
     border-color: #38bdf8;
-
     box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
 }
 
-
-/* =========================================
-   PROJECTS
-========================================= */
-
 .projects-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .project-card {
     background-color: #1e293b;
-
     padding: 30px;
-
     min-height: 270px;
-
     border-radius: 12px;
-
     border: 1px solid #334155;
-
     transition: all 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-
     border-color: #38bdf8;
-
     box-shadow: 0 15px 30px rgba(56, 189, 248, 0.12);
 }
 
 .project-number {
     color: #38bdf8;
-
     font-weight: bold;
 }
 
 .project-card h3 {
     font-size: 24px;
-
     margin: 15px 0;
 }
 
 .project-card p {
     color: #94a3b8;
-
     margin-bottom: 25px;
 }
 
 .project-card a {
     color: #38bdf8;
-
     text-decoration: none;
-
     font-weight: bold;
 }
 
@@ -369,110 +261,71 @@ header {
     text-decoration: underline;
 }
 
-
-/* =========================================
-   NUMBER GUESSING GAME
-========================================= */
-
 .game-section {
     max-width: 1100px;
 }
 
 .game-intro {
     color: #94a3b8;
-
     margin-top: 10px;
-
     font-size: 16px;
 }
 
-
-/* Main game container */
-
 .game-container {
     max-width: 750px;
-
     margin: auto;
 }
 
-
-/* Difficulty */
-
 .difficulty-box {
     background-color: #1e293b;
-
     padding: 25px;
-
     border-radius: 12px;
-
     border: 1px solid #334155;
-
     margin-bottom: 25px;
-
     text-align: center;
 }
 
 .difficulty-box h3 {
     margin-bottom: 18px;
-
     color: #e2e8f0;
 }
 
 .difficulty-buttons {
     display: flex;
-
     justify-content: center;
-
     gap: 12px;
 }
 
 .difficulty-btn {
     flex: 1;
-
     max-width: 180px;
-
     padding: 12px 15px;
-
     background-color: #0f172a;
-
     color: #cbd5e1;
-
     border: 1px solid #475569;
-
     border-radius: 8px;
-
     cursor: pointer;
-
     font-size: 15px;
-
     font-weight: bold;
-
     transition: all 0.3s ease;
 }
 
 .difficulty-btn span {
     display: block;
-
     font-size: 12px;
-
     color: #64748b;
-
     margin-top: 3px;
-
     font-weight: normal;
 }
 
 .difficulty-btn:hover {
     border-color: #38bdf8;
-
     color: #38bdf8;
 }
 
 .difficulty-btn.active {
     background-color: #38bdf8;
-
     color: #0f172a;
-
     border-color: #38bdf8;
 }
 
@@ -480,151 +333,90 @@ header {
     color: #0f172a;
 }
 
-
-/* Game card */
-
 .game-card {
     background-color: #1e293b;
-
     border: 1px solid #334155;
-
     border-radius: 15px;
-
     padding: 40px;
-
     text-align: center;
-
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
 .game-icon {
     font-size: 50px;
-
     margin-bottom: 10px;
 }
 
 .game-card h3 {
     font-size: 30px;
-
     margin-bottom: 10px;
 }
 
 .game-description {
     color: #94a3b8;
-
     margin-bottom: 30px;
 }
 
-
-/* Guess area */
-
 .guess-area {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     gap: 10px;
 }
 
 .guess-area label {
     color: #cbd5e1;
-
     font-weight: bold;
 }
 
 #guess-input {
     width: 100%;
-
     max-width: 300px;
-
     padding: 14px;
-
     background-color: #0f172a;
-
     color: #e2e8f0;
-
     border: 2px solid #475569;
-
     border-radius: 8px;
-
     font-size: 18px;
-
     text-align: center;
-
     outline: none;
-
-    transition: border-color 0.3s ease;
 }
 
 #guess-input:focus {
     border-color: #38bdf8;
 }
 
-
-/* Remove number input arrows */
-
-#guess-input::-webkit-inner-spin-button,
-#guess-input::-webkit-outer-spin-button {
-    opacity: 1;
-}
-
-
-/* Guess button */
-
 .guess-btn {
     width: 100%;
-
     max-width: 300px;
-
     padding: 14px;
-
     margin-top: 5px;
-
     background-color: #38bdf8;
-
     color: #0f172a;
-
     border: none;
-
     border-radius: 8px;
-
     font-size: 16px;
-
     font-weight: bold;
-
     cursor: pointer;
-
     transition: all 0.3s ease;
 }
 
 .guess-btn:hover {
     background-color: #7dd3fc;
-
     transform: translateY(-2px);
 }
 
 .guess-btn:disabled {
     opacity: 0.5;
-
     cursor: not-allowed;
-
     transform: none;
 }
 
-
-/* Message */
-
 .game-message {
     min-height: 30px;
-
     margin: 25px 0 20px;
-
     font-size: 18px;
-
     font-weight: bold;
-
     color: #cbd5e1;
 }
 
@@ -640,116 +432,73 @@ header {
     color: #f87171;
 }
 
-
-/* Stats */
-
 .game-stats {
     display: flex;
-
     justify-content: center;
-
     gap: 60px;
-
     padding: 20px 0;
-
     border-top: 1px solid #334155;
-
     border-bottom: 1px solid #334155;
 }
 
 .stat {
     display: flex;
-
     flex-direction: column;
-
     gap: 3px;
 }
 
 .stat-label {
     color: #64748b;
-
     font-size: 13px;
-
     text-transform: uppercase;
-
     letter-spacing: 1px;
 }
 
 .stat strong {
     color: #38bdf8;
-
     font-size: 24px;
 }
 
-
-/* Restart button */
-
 .restart-btn {
     margin-top: 25px;
-
     padding: 12px 25px;
-
     background-color: transparent;
-
     color: #38bdf8;
-
     border: 2px solid #38bdf8;
-
     border-radius: 8px;
-
     font-size: 15px;
-
     font-weight: bold;
-
     cursor: pointer;
-
     transition: all 0.3s ease;
 }
 
 .restart-btn:hover {
     background-color: #38bdf8;
-
     color: #0f172a;
-
-    transform: translateY(-2px);
 }
-
-
-/* =========================================
-   CONTACT
-========================================= */
 
 .contact-container {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 50px;
-
     background-color: #1e293b;
-
     padding: 40px;
-
     border-radius: 12px;
-
     border: 1px solid #334155;
 }
 
 .contact-info h3 {
     font-size: 28px;
-
     margin-bottom: 15px;
 }
 
 .contact-info p {
     color: #94a3b8;
-
     margin-bottom: 20px;
 }
 
 .contact-info a {
     color: #38bdf8;
-
     text-decoration: none;
 }
 
@@ -757,14 +506,9 @@ header {
     text-decoration: underline;
 }
 
-
-/* Contact form */
-
 .contact-form {
     display: flex;
-
     flex-direction: column;
-
     gap: 10px;
 }
 
@@ -775,22 +519,13 @@ header {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-
     padding: 13px;
-
     background-color: #0f172a;
-
     color: white;
-
     border: 1px solid #475569;
-
     border-radius: 6px;
-
     font-size: 15px;
-
     outline: none;
-
-    transition: border-color 0.3s ease;
 }
 
 .contact-form input:focus,
@@ -800,48 +535,28 @@ header {
 
 .contact-form textarea {
     min-height: 130px;
-
     resize: vertical;
 }
 
 .contact-form button {
     margin-top: 10px;
-
     padding: 13px;
-
     border: none;
-
     background-color: #38bdf8;
-
     color: #0f172a;
-
     font-weight: bold;
-
     border-radius: 6px;
-
     cursor: pointer;
-
-    transition: all 0.3s ease;
 }
 
 .contact-form button:hover {
     background-color: #7dd3fc;
-
-    transform: translateY(-2px);
 }
-
-
-/* =========================================
-   FOOTER
-========================================= */
 
 footer {
     text-align: center;
-
     padding: 25px;
-
     border-top: 1px solid #334155;
-
     color: #64748b;
 }
 
@@ -849,33 +564,22 @@ footer p {
     margin: 5px;
 }
 
-
-/* =========================================
-   RESPONSIVE DESIGN
-========================================= */
-
 @media (max-width: 800px) {
 
     .navbar {
         flex-direction: column;
-
         gap: 15px;
     }
 
     .nav-links {
         gap: 15px;
-
         flex-wrap: wrap;
-
         justify-content: center;
     }
 
-
     .hero {
         flex-direction: column-reverse;
-
         text-align: center;
-
         padding-top: 60px;
     }
 
@@ -891,42 +595,28 @@ footer p {
         justify-content: center;
     }
 
-
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 
     .projects-grid {
         grid-template-columns: 1fr;
     }
 
-
     .contact-container {
         grid-template-columns: 1fr;
     }
 
-
-    /* Game */
-
     .difficulty-buttons {
         flex-direction: column;
-
         align-items: center;
     }
 
     .difficulty-btn {
         max-width: 300px;
-
         width: 100%;
     }
-
 }
-
-
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 500px) {
 
@@ -936,10 +626,8 @@ footer p {
 
     .nav-links {
         gap: 10px;
-
         font-size: 13px;
     }
-
 
     .hero {
         padding: 50px 20px;
@@ -951,10 +639,8 @@ footer p {
 
     .hero-image img {
         width: 220px;
-
         height: 220px;
     }
-
 
     .hero-buttons {
         flex-direction: column;
@@ -962,10 +648,8 @@ footer p {
 
     .btn {
         width: 100%;
-
         text-align: center;
     }
-
 
     .section {
         padding: 65px 20px;
@@ -975,18 +659,13 @@ footer p {
         font-size: 32px;
     }
 
-
     .skills-grid {
         grid-template-columns: 1fr;
     }
 
-
     .contact-container {
         padding: 25px;
     }
-
-
-    /* Game */
 
     .game-card {
         padding: 25px 18px;
@@ -999,5 +678,4 @@ footer p {
     .game-stats {
         gap: 40px;
     }
-
 }
