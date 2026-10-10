@@ -1,388 +1,339 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishanth Bhat - Developer Portfolio</title>
+    <meta name="description" content="Developer portfolio of J Nishanth Bhat, an AI and ML engineering student and web developer.">
+    <title>J Nishanth Bhat | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">Nishanth.</h2>
+    <header class="navbar">
+        <a href="#home" class="logo">Nishanth<span>.</span></a>
 
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#game">Number Game</a>
-                <a href="#contact">Contact</a>
-            </div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#guessing-game">Guessing Game</a>
+            <a href="#task-manager">Task Manager</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
-
-        <div class="hero-text">
-            <p class="small-title">HELLO, I'M</p>
-
-            <h1>J Nishanth Bhat</h1>
-
-            <h2>AI & ML Engineering Student</h2>
-
-            <p>
-                I'm a second-year Artificial Intelligence and Machine
-                Learning engineering student passionate about web
-                development, AI and building real-world projects.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#game" class="btn btn-outline">Play Game</a>
-            </div>
-        </div>
-
-        <div class="hero-image">
-            <img src="profile.jpeg" alt="Nishanth Bhat">
-        </div>
-
-    </section>
-
-    <section id="about" class="section">
-
-        <div class="section-heading">
-            <p>GET TO KNOW ME</p>
-            <h2>About Me</h2>
-        </div>
-
-        <div class="about-card">
-            <p>
-                Hi! I'm Nishanth Bhat, a second-year Artificial Intelligence
-                and Machine Learning engineering student.
-            </p>
-
-            <p>
-                I have a good foundation in web development and I'm currently
-                learning the MERN stack. I enjoy building projects and
-                exploring new technologies.
-            </p>
-
-            <p>
-                I'm interested in both full-stack development and
-                Artificial Intelligence & Machine Learning.
-            </p>
-        </div>
-
-    </section>
-
-    <section id="skills" class="section">
-
-        <div class="section-heading">
-            <p>WHAT I WORK WITH</p>
-            <h2>My Skills</h2>
-        </div>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <h3>HTML</h3>
-                <p>Building structured and accessible web pages.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>CSS</h3>
-                <p>Creating responsive and visually appealing designs.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>Adding logic and interactivity to websites.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Python</h3>
-                <p>Programming and exploring AI/ML concepts.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>C / C++</h3>
-                <p>Strong programming and problem-solving fundamentals.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Git & GitHub</h3>
-                <p>Managing and collaborating on software projects.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>MERN Stack</h3>
-                <p>Currently learning modern full-stack development.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="projects" class="section">
-
-        <div class="section-heading">
-            <p>MY WORK</p>
-            <h2>Projects</h2>
-        </div>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <span class="project-number">01</span>
-
-                <h3>Spotify Clone</h3>
-
-                <p>
-                    A web development project inspired by Spotify,
-                    created to practice frontend development.
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <p class="eyebrow">HELLO, WORLD!</p>
+                <h1>I'm <span>J Nishanth Bhat</span></h1>
+                <h2>AI & ML Engineering Student</h2>
+                <p class="hero-description">
+                    Exploring the world of technology, building web experiences,
+                    and turning ideas into projects that solve real problems.
                 </p>
 
-                <a href="#">View Project →</a>
-            </div>
-
-            <div class="project-card">
-                <span class="project-number">02</span>
-
-                <h3>SAMAGRA NLAMS</h3>
-
-                <p>
-                    A prototype for a National Land Acquisition and
-                    Management System with GIS and workflow features.
-                </p>
-
-                <a href="#">View Project →</a>
-            </div>
-
-            <div class="project-card">
-                <span class="project-number">03</span>
-
-                <h3>TASC Website</h3>
-
-                <p>
-                    Official website project for TASC, the Department
-                    of Artificial Intelligence and Machine Learning.
-                </p>
-
-                <a href="#">View Project →</a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="game" class="section game-section">
-
-        <div class="section-heading">
-            
-            <h2>Number Guessing Game</h2>
-
-            <p class="game-intro">
-                Guess the secret number and test your luck!
-            </p>
-        </div>
-
-        <div class="game-container">
-
-            <div class="difficulty-box">
-
-                <h3>Select Difficulty</h3>
-
-                <div class="difficulty-buttons">
-
-                    <button
-                        type="button"
-                        class="difficulty-btn active"
-                        data-max="50">
-                        Easy
-                        <span>1 - 50</span>
-                    </button>
-
-                    <button
-                        type="button"
-                        class="difficulty-btn"
-                        data-max="100">
-                        Medium
-                        <span>1 - 100</span>
-                    </button>
-
-                    <button
-                        type="button"
-                        class="difficulty-btn"
-                        data-max="500">
-                        Hard
-                        <span>1 - 500</span>
-                    </button>
-
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-btn">Explore My Work</a>
+                    <a href="#contact" class="secondary-btn">Contact Me</a>
                 </div>
 
+                <div class="social-links">
+                    <a href="https://github.com/NISHANTH-100807" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/j-nishanth-bhat/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                </div>
             </div>
 
-            <div class="game-card">
+            <div class="hero-image-wrapper">
+                <div class="image-glow"></div>
+                <img src="profile.jpeg" alt="J Nishanth Bhat" class="profile-image">
+                <div class="floating-card">
+                    <span class="status-dot"></span>
+                    Learning. Building. Improving.
+                </div>
+            </div>
+        </section>
 
-                <div class="game-icon">🎯</div>
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p>GET TO KNOW ME</p>
+                <h2>About Me</h2>
+            </div>
 
-                <h3>Guess the Number!</h3>
+            <div class="content-card">
+                <p>
+                    I'm an AI and Machine Learning engineering student at NMAM
+                    Institute of Technology, Nitte, with an interest in web
+                    development, artificial intelligence, and problem-solving.
+                </p>
+                <p>
+                    I enjoy learning by building projects, collaborating with
+                    teams, and exploring how technology can be used to create
+                    practical solutions. I'm currently developing my skills
+                    across frontend development and the MERN stack.
+                </p>
+            </div>
+        </section>
 
-                <p class="game-description">
-                    I'm thinking of a number between
-                    <strong>1</strong> and
-                    <strong id="max-number">50</strong>.
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p>WHAT I WORK WITH</p>
+                <h2>My Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon">⌨</div>
+                    <h3>Programming</h3>
+                    <div class="tags">
+                        <span>C</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">⌘</div>
+                    <h3>Web Development</h3>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">⚙</div>
+                    <h3>Tools & Technologies</h3>
+                    <div class="tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>APIs</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">✦</div>
+                    <h3>Areas of Interest</h3>
+                    <div class="tags">
+                        <span>AI & ML</span>
+                        <span>Problem Solving</span>
+                        <span>Full-Stack Development</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p>THINGS I'VE BUILT</p>
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-number">01</div>
+                    <h3>Spotify Clone</h3>
+                    <p>
+                        A music streaming interface project focused on
+                        recreating a familiar music browsing experience
+                        using frontend web technologies.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+                    <h3>SAMAGRA — NLAMS</h3>
+                    <p>
+                        A land acquisition management prototype designed to
+                        improve visibility into land records, survey
+                        discrepancies, compensation, and rehabilitation.
+                    </p>
+                    <div class="tags">
+                        <span>AI/ML</span>
+                        <span>GIS</span>
+                        <span>Web Development</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">03</div>
+                    <h3>TASC Website</h3>
+                    <p>
+                        Contributing to the website of the Technical
+                        Association of Students of Computing, supporting
+                        its team information and digital presence.
+                    </p>
+                    <div class="tags">
+                        <span>Next.js</span>
+                        <span>React</span>
+                        <span>TypeScript</span>
+                    </div>
+                    <a href="https://tascnmamit.in/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Visit Website ↗
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="guessing-game" class="section">
+            <div class="section-heading">
+                <p>TAKE A BREAK</p>
+                <h2>Number Guessing Game</h2>
+            </div>
+
+            <div class="interactive-card game-card">
+                <div class="game-symbol">?</div>
+                <p class="card-description">
+                    I'm thinking of a number between 1 and 100.
+                    Can you guess it?
                 </p>
 
-                <div class="guess-area">
-
-                    <label for="guess-input">
-                        Enter your guess
-                    </label>
-
+                <form id="guessForm" class="game-input-area">
                     <input
                         type="number"
-                        id="guess-input"
+                        id="guessInput"
                         min="1"
-                        max="50"
-                        placeholder="Enter a number"
-                        autocomplete="off">
-
-                    <button
-                        type="button"
-                        id="guess-button"
-                        class="guess-btn">
-                        Make Guess
+                        max="100"
+                        placeholder="Enter your guess"
+                        aria-label="Your guess"
+                        required
+                    >
+                    <button type="submit" id="guessBtn" class="primary-btn">
+                        Guess
                     </button>
+                </form>
 
+                <p id="guessMessage" class="game-message" aria-live="polite">
+                    Make your first guess!
+                </p>
+
+                <div class="attempt-display">
+                    <span>Attempts</span>
+                    <strong id="attemptCount">0</strong>
                 </div>
 
-                <div
-                    id="message"
-                    class="game-message"
-                    aria-live="polite">
-                    Good luck! Start guessing.
-                </div>
-
-                <div class="game-stats">
-
-                    <div class="stat">
-                        <span class="stat-label">Attempts</span>
-                        <strong id="attempts">0</strong>
-                    </div>
-
-                    <div class="stat">
-                        <span class="stat-label">Maximum</span>
-                        <strong id="max-attempts">10</strong>
-                    </div>
-
-                </div>
-
-                <button
-                    type="button"
-                    id="restart-button"
-                    class="restart-btn"
-                    hidden>
+                <button type="button" id="restartGame" class="secondary-btn">
                     Play Again
                 </button>
+            </div>
+        </section>
 
+        <section id="task-manager" class="section">
+            <div class="section-heading">
+                <p>STAY PRODUCTIVE</p>
+                <h2>My Task Manager</h2>
             </div>
 
-        </div>
+            <div class="interactive-card task-card">
+                <div class="task-header">
+                    <div>
+                        <h3>Today's Tasks</h3>
+                        <p class="card-description">Small steps. Big progress.</p>
+                    </div>
+                    <div class="task-counter">
+                        <strong id="totalTasks">0</strong>
+                        <span>Total tasks</span>
+                    </div>
+                </div>
 
-    </section>
+                <form id="taskForm" class="task-input-area">
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="What do you need to do?"
+                        maxlength="150"
+                        aria-label="New task"
+                        required
+                    >
+                    <button type="submit" class="primary-btn">Add Task +</button>
+                </form>
 
-    <section id="contact" class="section contact-section">
+                <p id="taskMessage" class="task-message" aria-live="polite"></p>
 
-        <div class="section-heading">
-            <p>GET IN TOUCH</p>
-            <h2>Contact Me</h2>
-        </div>
+                <div class="task-stats">
+                    <div>
+                        <span class="stat-dot all-dot"></span>
+                        <span>All</span>
+                        <strong id="allCount">0</strong>
+                    </div>
+                    <div>
+                        <span class="stat-dot completed-dot"></span>
+                        <span>Completed</span>
+                        <strong id="completedCount">0</strong>
+                    </div>
+                    <div>
+                        <span class="stat-dot pending-dot"></span>
+                        <span>Pending</span>
+                        <strong id="pendingCount">0</strong>
+                    </div>
+                </div>
 
-        <div class="contact-container">
+                <div class="task-toolbar">
+                    <h3>Your List</h3>
+                    <div class="filter-buttons" role="group" aria-label="Filter tasks">
+                        <button type="button" class="filter-btn active" data-filter="all">All</button>
+                        <button type="button" class="filter-btn" data-filter="pending">Pending</button>
+                        <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+                    </div>
+                </div>
 
-            <div class="contact-info">
+                <ul id="taskList" class="task-list"></ul>
 
-                <h3>Let's Connect</h3>
-
-                <p>
-                    Feel free to reach out to me through email or
-                    social media.
+                <p id="emptyMessage" class="empty-message">
+                    No tasks yet. Add your first task above!
                 </p>
 
-                <p>
-                    <strong>Email:</strong><br>
+                <div class="task-footer">
+                    <span id="remainingMessage">You're all caught up!</span>
+                    <button type="button" id="clearCompleted" class="text-btn">
+                        Clear Completed
+                    </button>
+                </div>
+            </div>
+        </section>
 
-                    <a href="mailto:bhatnishanth07@gmail.com">
-                        bhatnishanth07@gmail.com
-                    </a>
-                </p>
-
-                <p>
-                    <strong>GitHub:</strong><br>
-
-                    <a
-                        href="https://github.com/NISHANTH-100807"
-                        target="_blank">
-                        github.com/NISHANTH-100807
-                    </a>
-                </p>
-
-                <p>
-                    <strong>LinkedIn:</strong><br>
-
-                    <a
-                        href="https://www.linkedin.com/in/j-nishanth-bhat/"
-                        target="_blank">
-                        linkedin.com/in/j-nishanth-bhat
-                    </a>
-                </p>
-
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <p>LET'S CONNECT</p>
+                <h2>Contact Me</h2>
             </div>
 
-            <form class="contact-form" id="contact-form">
+            <div class="content-card contact-card">
+                <p>
+                    Have an interesting project, collaboration idea,
+                    or opportunity? Feel free to reach out.
+                </p>
 
-                <label for="name">Name</label>
+                <div class="contact-links">
+                    <a href="https://github.com/NISHANTH-100807" target="_blank" rel="noopener noreferrer">
+                        <span>GitHub</span>
+                        <span>Explore my repositories ↗</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/j-nishanth-bhat/" target="_blank" rel="noopener noreferrer">
+                        <span>LinkedIn</span>
+                        <span>Let's connect professionally ↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Your Name"
-                    required>
-
-                <label for="email">Email</label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required>
-
-                <label for="message-input">Message</label>
-
-                <textarea
-                    id="message-input"
-                    name="message"
-                    placeholder="Write your message here..."
-                    required></textarea>
-
-                <button type="submit">
-                    Send Message
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
+    <footer class="footer">
+        <a href="#home" class="logo">Nishanth<span>.</span></a>
+        <p>Designed and built with curiosity.</p>
+        <p>© <span id="currentYear"></span> J Nishanth Bhat</p>
+    </footer>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
