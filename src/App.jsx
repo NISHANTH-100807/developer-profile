@@ -4,6 +4,7 @@ import Skills from './components/Skills.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import { projects, skills, socials } from './data.js';
+import profileImage from '../profile.jpeg';
 
 const aboutParagraphs = [
   "I'm an AI and Machine Learning engineering student at NMAM Institute of Technology, Nitte, with an interest in web development, artificial intelligence, and problem-solving.",
@@ -97,7 +98,7 @@ export default function App() {
       <section id="home" className="hero section"><div className="hero-content"><p className="eyebrow">HELLO, WORLD!</p><h1>I'm <span>J Nishanth Bhat</span></h1><h2>AI &amp; ML Engineering Student</h2><p className="hero-description">Exploring the world of technology, building web experiences, and turning ideas into projects that solve real problems.</p>
         <div className="hero-buttons"><a href="#projects" className="primary-btn">Explore My Work</a><a href="#contact" className="secondary-btn">Contact Me</a></div>
         <div className="social-links">{socials.map((link) => <a href={link.href} key={link.name} target="_blank" rel="noopener noreferrer">{link.name} ↗</a>)}</div>
-      </div><div className="hero-image-wrapper"><div className="image-glow" /><img src="/profile.jpeg" alt="J Nishanth Bhat" className="profile-image" /><div className="floating-card"><span className="status-dot" />Learning. Building. Improving.</div></div></section>
+      </div><div className="hero-image-wrapper"><div className="image-glow" /><img src={profileImage} alt="J Nishanth Bhat" className="profile-image" /><div className="floating-card"><span className="status-dot" />Learning. Building. Improving.</div></div></section>
       <About eyebrow="GET TO KNOW ME" title="About Me" paragraphs={aboutParagraphs} />
       <Skills eyebrow="WHAT I WORK WITH" title="My Skills" skills={skills} />
       <Projects eyebrow="THINGS I'VE BUILT" title="Featured Projects" projects={projects} />
