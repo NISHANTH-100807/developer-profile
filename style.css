@@ -12,6 +12,19 @@
     --red: #fb7185;
     --radius: 14px;
     --transition: 0.25s ease;
+    color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+    --background: #f4f8fc;
+    --surface: #ffffff;
+    --card: #edf4fa;
+    --border: #d5e0eb;
+    --cyan: #0284c7;
+    --cyan-dark: #0369a1;
+    --text: #13243a;
+    --muted: #53657a;
+    color-scheme: light;
 }
 
 * {
@@ -65,12 +78,30 @@ input:focus-visible {
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    background: rgba(11, 17, 32, 0.94);
+    background: color-mix(in srgb, var(--background) 94%, transparent);
     border-bottom: 1px solid rgba(148, 163, 184, 0.13);
     position: sticky;
     top: 0;
     z-index: 10;
     backdrop-filter: blur(16px);
+}
+
+.theme-toggle {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.theme-toggle:hover { border-color: var(--cyan); color: var(--cyan); }
+
+.section-filters {
+    justify-content: center;
+    margin: -16px 0 25px;
 }
 
 .logo {
@@ -249,7 +280,7 @@ input:focus-visible {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: #152238;
+    background: var(--card);
     border: 1px solid var(--border);
     border-radius: 10px;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
@@ -344,7 +375,7 @@ input:focus-visible {
 
 .tags span {
     padding: 5px 10px;
-    color: #bae6fd;
+    color: var(--cyan);
     background: rgba(56, 189, 248, 0.08);
     border: 1px solid rgba(56, 189, 248, 0.18);
     border-radius: 6px;
@@ -696,6 +727,11 @@ input:focus-visible {
     text-decoration: underline;
 }
 
+.text-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
 .contact-card {
     max-width: 700px;
 }
@@ -749,13 +785,16 @@ input:focus-visible {
 
 @media (max-width: 1000px) {
     .navbar {
-        align-items: flex-start;
-        flex-direction: column;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 12px;
     }
 
     .nav-links {
-        justify-content: flex-start;
+        flex: 1 1 100%;
+        order: 3;
+        justify-content: center;
         gap: 10px 18px;
     }
 
@@ -766,6 +805,13 @@ input:focus-visible {
     .floating-card {
         left: -12px;
     }
+}
+
+@media (max-width: 560px) {
+    .navbar { padding: 12px 5%; }
+    .nav-links { justify-content: flex-start; gap: 7px 14px; }
+    .nav-links a { font-size: 0.77rem; }
+    .theme-toggle { margin-left: auto; }
 }
 
 @media (max-width: 720px) {
