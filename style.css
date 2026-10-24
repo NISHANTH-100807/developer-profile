@@ -321,6 +321,59 @@ input:focus-visible {
     border-radius: var(--radius);
 }
 
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.github-section { background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--surface) 36%, transparent), transparent); }
+.finder-intro { display: block; margin-top: 12px; color: var(--muted); }
+.finder-card { max-width: 1000px; margin: 0 auto; padding: 28px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.finder-search { position: relative; display: flex; gap: 10px; }
+.finder-search input { min-width: 0; flex: 1; padding: 12px 14px 12px 38px; color: var(--text); background: var(--background); border: 1px solid var(--border); border-radius: 8px; }
+.finder-search input:focus { border-color: var(--cyan); outline: 2px solid color-mix(in srgb, var(--cyan) 24%, transparent); }
+.finder-search input::placeholder { color: #718096; }
+.finder-search button { flex-shrink: 0; }
+.finder-search button:disabled { opacity: .7; cursor: wait; }
+.search-at { position: absolute; left: 14px; top: 8px; color: var(--muted); font-size: 1.1rem; }
+.finder-hint { margin-top: 10px; color: var(--muted); font-size: .84rem; }
+.inline-link { color: var(--cyan); background: none; border: 0; text-decoration: underline; }
+.search-history { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; color: var(--muted); font-size: .8rem; }
+.search-history > span { margin-right: 3px; }
+.search-history button { padding: 4px 9px; color: var(--cyan); background: var(--card); border: 1px solid var(--border); border-radius: 99px; font-size: .78rem; }
+.search-history button:hover { border-color: var(--cyan); }
+.finder-state, .finder-empty { min-height: 150px; display: flex; align-items: center; justify-content: center; gap: 12px; color: var(--muted); text-align: center; }
+.finder-error { color: var(--red); }
+.finder-empty { flex-direction: column; gap: 5px; }
+.finder-empty > span { color: var(--cyan); font-size: 2.2rem; line-height: 1.1; }
+.finder-spinner { width: 19px; height: 19px; border: 2px solid var(--border); border-top-color: var(--cyan); border-radius: 50%; animation: finderSpin .7s linear infinite; }
+@keyframes finderSpin { to { transform: rotate(360deg); } }
+.finder-results { margin-top: 26px; }
+.profile-result { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 28px; padding: 24px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
+.finder-avatar { width: 160px; aspect-ratio: 1; object-fit: cover; border: 1px solid var(--border); border-radius: 50%; }
+.profile-details { min-width: 0; }
+.finder-kicker { color: var(--cyan); font-size: .7rem; font-weight: 800; letter-spacing: 1.8px; }
+.profile-details h3 { margin-top: 2px; font-size: 1.65rem; line-height: 1.3; overflow-wrap: anywhere; }
+.profile-handle { color: var(--muted); }
+.profile-handle:hover, .repository-card a:hover { color: var(--cyan); }
+.profile-bio { margin: 13px 0 18px; color: var(--muted); white-space: pre-wrap; overflow-wrap: anywhere; }
+.profile-stats { display: flex; flex-wrap: wrap; gap: 12px; }
+.profile-stats div { min-width: 105px; display: flex; flex-direction: column; padding: 9px 13px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+.profile-stats strong { color: var(--text); font-size: 1.05rem; }
+.profile-stats span { color: var(--muted); font-size: .75rem; }
+.profile-visit { width: fit-content; gap: 8px; margin-top: 18px; }
+.repository-area { margin-top: 28px; }
+.repository-heading { display: flex; align-items: end; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.repository-heading h3 { font-size: 1.2rem; }
+.repository-heading > span { color: var(--muted); font-size: .8rem; }
+.repository-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.repository-card { min-width: 0; padding: 17px; background: var(--card); border: 1px solid var(--border); border-radius: 10px; }
+.repo-title { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.repo-title h4 { min-width: 0; overflow-wrap: anywhere; font-size: .98rem; }
+.repo-title h4 a span { color: var(--muted); font-size: .8rem; }
+.repo-star { flex-shrink: 0; color: var(--muted); font-size: .78rem; }
+.repository-card > p { min-height: 44px; margin-top: 8px; color: var(--muted); font-size: .82rem; overflow-wrap: anywhere; }
+.repo-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 13px; color: var(--muted); font-size: .74rem; }
+.repo-meta > span { display: inline-flex; align-items: center; gap: 6px; }
+.repo-meta a { color: var(--cyan); }
+.language-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); }
+
 .content-card {
     max-width: 900px;
     margin: 0 auto;
@@ -845,9 +898,13 @@ input:focus-visible {
     }
 
     .interactive-card,
-    .content-card {
+    .content-card,
+    .finder-card {
         padding: 22px;
     }
+
+    .profile-result { grid-template-columns: 110px minmax(0, 1fr); gap: 18px; }
+    .finder-avatar { width: 110px; }
 
     .task-stats {
         gap: 7px;
@@ -867,6 +924,14 @@ input:focus-visible {
         justify-content: center;
         text-align: center;
     }
+}
+
+@media (max-width: 560px) {
+    .repository-grid { grid-template-columns: 1fr; }
+    .profile-result { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+    .profile-details { width: 100%; }
+    .profile-stats { justify-content: center; }
+    .profile-visit { margin-inline: auto; }
 }
 
 @media (max-width: 480px) {
@@ -904,14 +969,18 @@ input:focus-visible {
     }
 
     .game-input-area,
-    .task-input-area {
+    .task-input-area,
+    .finder-search {
         flex-direction: column;
     }
 
     .game-input-area button,
-    .task-input-area button {
+    .task-input-area button,
+    .finder-search button {
         width: 100%;
     }
+
+    .search-at { top: 8px; }
 
     .task-header {
         align-items: flex-start;

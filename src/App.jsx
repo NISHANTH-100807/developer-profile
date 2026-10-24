@@ -3,6 +3,7 @@ import About from './components/About.jsx';
 import Skills from './components/Skills.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
+import GitHubFinder from './components/GitHubFinder.jsx';
 import { projects, skills, socials } from './data.js';
 import profileImage from '../profile.jpeg';
 
@@ -91,7 +92,7 @@ export default function App() {
   useEffect(() => { document.documentElement.dataset.theme = theme; localStorage.setItem('nishanthTheme', theme); }, [theme]);
   return <div className="app-shell">
     <header className="navbar"><a href="#home" className="logo">Nishanth<span>.</span></a>
-      <nav className="nav-links" aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#guessing-game">Guessing Game</a><a href="#task-manager">Task Manager</a><a href="#contact">Contact</a></nav>
+      <nav className="nav-links" aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#guessing-game">Guessing Game</a><a href="#task-manager">Task Manager</a><a href="#github-finder">GitHub Finder</a><a href="#contact">Contact</a></nav>
       <button type="button" className="theme-toggle" aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} onClick={() => setTheme((current) => current === 'dark' ? 'light' : 'dark')}>{theme === 'dark' ? '☀ Light' : '☾ Dark'}</button>
     </header>
     <main>
@@ -102,7 +103,7 @@ export default function App() {
       <About eyebrow="GET TO KNOW ME" title="About Me" paragraphs={aboutParagraphs} />
       <Skills eyebrow="WHAT I WORK WITH" title="My Skills" skills={skills} />
       <Projects eyebrow="THINGS I'VE BUILT" title="Featured Projects" projects={projects} />
-      <GuessingGame /><TaskManager />
+      <GuessingGame /><TaskManager /><GitHubFinder />
       <Contact eyebrow="LET'S CONNECT" title="Contact Me" intro="Have an interesting project, collaboration idea, or opportunity? Feel free to reach out." links={socials} />
     </main>
     <footer className="footer"><a href="#home" className="logo">Nishanth<span>.</span></a><p>Designed and built with curiosity.</p><p>© {new Date().getFullYear()} J Nishanth Bhat</p></footer>
